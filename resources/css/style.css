@@ -3,6 +3,16 @@
 html {
   font-size: 16px;
 }
+
+h1 {
+  font-family: Helvetica, sans-serif;
+  color: #4A4A4A;
+  font-size: 2rem;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+}
 /* HEADER */
 
 header {
@@ -14,6 +24,7 @@ header {
   background-color: white;
   z-index: 1;
   padding: 0 24px;
+  top: 0;
 }
 
 header h2, span {
@@ -49,7 +60,7 @@ header li {
   display: none;
 }
 
-@media only screen and (max-width: 570px) {
+@media only screen and (max-width: 630px) {
   .main-nav,
   .logo {
     display: none;
@@ -68,57 +79,71 @@ header li {
 
 .banner {
   width: 100%;
+  height: auto;
   background-color: lightgray;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  display: inline-block;
+}
+
+.banner-image {
 }
 
 .banner img {
-  margin: 32px 24px;
-  width: 80%;
-  border-right: 1px solid black;
+  width: 60%;
+  height: auto;
+  display: inline-block;
+  float: left;
+  margin: 2rem 1.5rem;
+
 }
 
 .banner-content {
-  display: flex;
-  flex-direction: column;
-  width: 40%;
-  border-left: 1px solid black;
+  display: inline-block;
+  width: 30%;
+  height: auto;
+  float: right;
+  position: relative;
+  top: 12rem;
+  right: 3rem;
+}
+
+.banner-content h1, h4 {
+  font-family: Helvetica, sans-serif;
+  color: #4A4A4A;
 
 }
 
 .banner-content h1 {
   font-size: 2.5rem;
-  font-family: Helvetica, sans-serif;
+  line-height: 1;
   font-weight: bold;
-  color: darkgray;
+  margin-bottom: 1rem;
 }
 
 .banner-content h4 {
   font-size: 1.5rem;
-  font-family: Helvetica, sans-serif;
   font-weight: normal;
-  color: darkgray;
+  line-height: 1.2;
+  margin-bottom: 1.6rem;
 }
 
 .banner-btn {
-  width: 60%;
-  border: 1px solid darkgray;
-  background-color: darkgray;
-  padding: 8px 40px;
+  width: 100%;
+  border: 1px solid #4A4A4A;
+  background-color: #4A4A4A;
   color: white;
+  padding: 8px 40px;
 }
 
 .banner-btn span {
   text-align: center;
+  font-size: 0.8rem;
 }
 
-@media only screen and (max-width: 570px) {
+@media only screen and (max-width: 630px) {
   .banner {
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
+    width: 100%
   }
 
   .banner img {
@@ -127,9 +152,14 @@ header li {
   }
 
   .banner-content {
-    width: 90%;
-    margin: 32px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0rem;
+    right: 0rem;
+    margin: 2rem 1rem;
     }
+
 
   .banner-content h1 {
     margin-bottom: 32px;
@@ -138,4 +168,45 @@ header li {
   .banner-content h4 {
     margin-bottom: 24px;
   }
+}
+
+/* Information section */
+
+.information {
+
+}
+
+.information-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.information-main h1 {
+  font-weight: bolder;
+}
+
+.information-main img {
+  width: 60%;
+  margin: 2rem 1.5rem;
+}
+
+.information-main h1, p, span {
+  margin-left: 1.5rem;
+  width: 60%;
+}
+
+.information-main h1, p {
+  margin-bottom: 1.5rem;
+}
+
+.information-main p {
+  font-size: 1rem;
+  font-weight: lighter;
+}
+
+.information-main span {
+  margin-bottom: 2rem;
+  font-size: 0.8rem;
 }
