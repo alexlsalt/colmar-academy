@@ -152,14 +152,11 @@ header li {
   }
 
   .banner-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    left: 0rem;
-    right: 0rem;
     margin: 2rem 1rem;
+    position: static;
+    width: 100%;
+    text-align: left;
     }
-
 
   .banner-content h1 {
     margin-bottom: 32px;
@@ -168,12 +165,27 @@ header li {
   .banner-content h4 {
     margin-bottom: 24px;
   }
+
+  .banner-btn {
+    width: 30%;
+    border: 1px solid gray;
+    background-color: gray;
+    color: white;
+    padding: 8px 40px;
+  }
+
 }
 
 /* Information section */
 
 .information {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
 
+.information-mobile {
+  display: none;
 }
 
 .information-main {
@@ -181,6 +193,7 @@ header li {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  width: 60%;
 }
 
 .information-main h1 {
@@ -188,13 +201,13 @@ header li {
 }
 
 .information-main img {
-  width: 60%;
   margin: 2rem 1.5rem;
+  width: 100%;
 }
 
 .information-main h1, p, span {
   margin-left: 1.5rem;
-  width: 60%;
+  width: 100%;
 }
 
 .information-main h1, p {
@@ -209,4 +222,92 @@ header li {
 .information-main span {
   margin-bottom: 2rem;
   font-size: 0.8rem;
+}
+
+.sections {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin-left: 2.5rem;
+  border-left: 1px solid lightgray;
+}
+
+.section {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.section-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.section img {
+  width: 35%;
+  height: 35%;
+  margin: 1rem;
+}
+
+.section h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #4A4A4A;
+  line-height: 1.5;
+}
+
+.section span {
+  padding-left: 0;
+}
+
+.section.campus {
+  border-top: 3px solid lightgray;
+}
+
+.section.gray {
+  background-color: lightgray;
+}
+
+@media only screen and (max-width: 630px) {
+  .information-main {
+    display: none;
+  }
+
+  .sections {
+    display: none;
+  }
+
+  .information-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .section-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+  .section-mobile img {
+    width: 80%;
+  }
+
+  .section-mobile h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #4A4A4A;
+    line-height: 1.5;
+  }
+
+  .section-mobile.campus {
+    margin-top: 4rem;
+  }
+
+  .section-mobile.lecture {
+    margin-top: 4rem;
+  }
 }
