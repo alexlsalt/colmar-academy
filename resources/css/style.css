@@ -437,11 +437,13 @@ header li {
 .thesis {
   margin-top: 2rem;
   padding-bottom: 2rem;
+  color: gray;
 }
 
 .thesis h1 {
   margin-bottom: 2rem;
   text-align: center;
+  font-weight: bold;
 }
 
 .thesis-container {
@@ -469,6 +471,11 @@ header li {
 
 .video-content h3 {
   margin-bottom: 0.5rem;
+}
+
+.video-content p {
+  font-weight: lighter;
+  color: gray;
 }
 
 
@@ -503,6 +510,12 @@ header li {
   width: 100%;
 }
 
+.thesis-image-content p {
+  color: gray;
+  font-weight: lighter;
+  margin-top: 0.5rem;
+}
+
 @media only screen and (max-width: 630px) {
   .thesis h1 {
     font-weight: bold;
@@ -522,5 +535,46 @@ header li {
 
   .mobile-video video {
     width: 100%;
+  }
+}
+
+/* Footer section */
+
+footer {
+  border-top: 1px solid lightgray;
+  font-weight: ligher;
+  font-size: 0.8rem;
+  color: gray;
+}
+
+.footer.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+
+footer .left {
+  margin-left: 1.5rem;
+}
+
+.right li {
+  display: inline;
+  padding-right: 1rem;
+}
+
+@media only screen and (max-width: 470px) {
+  footer {
+    padding-top: 1.5rem;
+    border-top: none;
+  }
+
+  .right {
+    display: none;
+  }
+
+  .left {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 }
