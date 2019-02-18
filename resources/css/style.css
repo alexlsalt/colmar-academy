@@ -253,6 +253,7 @@ header li {
 .section-content {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
 }
 
 .section img {
@@ -263,13 +264,23 @@ header li {
 
 .section h3 {
   font-size: 1.2rem;
-  font-weight: bold;
+  font-weight: normal;
   color: #4A4A4A;
   line-height: 1.5;
 }
 
 .section span {
   padding-left: 0;
+  color: #4A4A4A;
+  font-weight: lighter;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.section a {
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: cornflowerblue;
 }
 
 .section.campus {
