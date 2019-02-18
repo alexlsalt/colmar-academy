@@ -237,6 +237,7 @@ header li {
   display: flex;
   flex-direction: column;
   width: 40%;
+  margin-top: 1rem;
   margin-left: 2.5rem;
   border-left: 1px solid lightgray;
 }
@@ -256,7 +257,7 @@ header li {
 
 .section img {
   width: 35%;
-  height: 35%;
+  height: auto;
   margin: 1rem;
 }
 
